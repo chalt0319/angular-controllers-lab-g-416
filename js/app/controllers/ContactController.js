@@ -1,5 +1,15 @@
 function ContactController() {
-    this.name = 'Bill Gates';
+  var vm = this
+
+    vm.name = 'Bill Gates';
+
+    vm.changeName = function () {
+      vm.name = "Bob Gutes"
+    }
+    vm.changeBack = function () {
+      vm.name = 'Bill Gates'
+    }
+
 }
 
 angular

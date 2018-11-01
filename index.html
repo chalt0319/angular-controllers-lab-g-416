@@ -11,6 +11,8 @@
     <div ng-app="app">
         <div ng-controller="ContactController as contact">
             Hello, {{ contact.name }}!
+            <button type="button" name="button" ng-click="contact.changeName()">Change Name!!</button>
+            <button type="button" name="button" ng-click="contact.changeBack()">Change Back!!</button>
 
             <div ng-controller="StaffController as staff">
                 Also hello to {{ staff.name }}, best friends with {{ contact.name }}!
